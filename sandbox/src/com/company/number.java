@@ -4,6 +4,23 @@ import java.util.Arrays;
 
 public class number {
     public static void main(String[] args) {
+        String name="Nkurunzia";
+        StringBuilder  str= new StringBuilder(name);
+        str.insert(name.length()-1,"z");
+        //StringBuilder  str= new StringBuilder("frank");
+        //System.out.println(str);
+        str.append("Frank");
+
+
+        System.out.println(str.toString());
+        System.out.println(name.hashCode());
+        System.out.println(str.hashCode());
+       // ------------------------------------------------
+        String a="a";
+        String b="b";
+        System.out.println(a.equals(b));
+
+
         int count = 0;
         int [] num={17,501,482,1771};
         // loop through array
@@ -27,5 +44,18 @@ public class number {
         for(int i=0;i<nums.length;i++){
             System.out.println(nums[i]);
         }
-    }
-}
+
+
+                System.out.println("Checking total amount");
+                Account checking = new Checking();
+                checking.greet();
+                double tc = checking.computerInterest(8000.0);
+                System.out.println(tc);
+
+                System.out.println("saving total amount");
+                Account saving = new Saving();
+                saving.greet();
+                double ts = saving.computerInterest(8000.0);
+                System.out.println(ts);
+            }
+        }
