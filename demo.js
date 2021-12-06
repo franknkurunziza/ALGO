@@ -4,6 +4,9 @@
 // // output [value,item,item]
 // //[] return [value]
 
+// const { forEach } = require("core-js/core/array");
+// const element = require("domhandler/lib/element");
+
 // //Q1
 // function pushfront(arr,value){
 //     for(var i=arr.length-1;i>-1;i--){
@@ -149,3 +152,21 @@
 //     return arr1;
 // }
 // console.log(arrConcat([1,2,3],[4,5]))
+
+function solution(str){
+    let newstr=str.toLowerCase();
+    let sol=newstr.split("");
+    for(let i=0;i<sol.length;i++){
+      if(i%2==0){
+        sol[i]=sol[i].toUpperCase();
+        
+      }
+    }
+    let res=""
+    sol.forEach(myFunction);
+    function myFunction(index){
+      res += index;
+    }
+    return res
+  }
+  console.log(solution("HELLO1235"))

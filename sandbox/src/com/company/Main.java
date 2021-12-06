@@ -19,28 +19,6 @@ public class Main {
     public static void main(String[] args) {
 	// write your code here.
         int [] nums={1,1,0,1,1,1,0,0,1,1,1,1,1};
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         System.out.println(findMaxConsecutiveOnes(nums));
 //        int[][] array = {
 //                {1, 2, 3},
@@ -96,5 +74,6 @@ public class Main {
 //            System.arraycopy(source[i] ,0,destination[i],0,destination[i].length);
 //        }
 //        System.out.println(Arrays.deepToString(destination));
+
     }
 }
