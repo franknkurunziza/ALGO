@@ -169,4 +169,4 @@ function solution(str){
     }
     return res
   }
-  console.log(solution("HELLO1235"))
+  console.log(solution("jdfvjkls34578"))
