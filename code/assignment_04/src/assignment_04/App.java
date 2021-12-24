@@ -2,6 +2,8 @@ package assignment_04;
 
 import ignore.TestingUtils;
 
+import java.util.Arrays;
+
 public class App {
 
 	/**
@@ -18,8 +20,16 @@ public class App {
 		birdsSinging(95, true) <b>---></b> true <br>
 	 */
 	public static boolean birdsSinging(int temp, boolean isSummer) {
-		
-		return true;		
+		//if not in summer and  if temp is above 60 and 90 birds sing
+		// if is in summer temp is above 60 and temp >100 birds sing
+		//otherwise birds sing
+		if(!isSummer && temp>=60 && temp<=90){
+			return true;
+		}
+		else if(isSummer && temp>=60 &&temp<=100){
+			return true;
+		}
+		return false;
 	}
 	
 	
