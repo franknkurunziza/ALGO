@@ -2,7 +2,7 @@ package assignment_05;
 
 import ignore.TestingUtils;
 
-public class App {
+public class    App {
 
 	/**
 	Given three ints, first, second, third, return true if second is greater than first, and third is 
